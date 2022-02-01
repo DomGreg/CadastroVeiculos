@@ -1,4 +1,4 @@
-import eviron 
+import environ 
 
 from crud.settings.base import *
 
@@ -11,5 +11,6 @@ SECRET_KEY = env("SECRET_KEY")
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 DATABASES = {
+
     "default":env.db(),
 }
